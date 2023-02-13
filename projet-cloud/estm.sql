@@ -26,9 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `adherent`
 --
-create DATABASE IF NOT EXISTS abdou CHARACTER SET utf8;
-CREATE user 'abdou'@'localhost' IDENTIFIED BY 'abdou';
-GRANT ALL PRIVILEGES ON test ESTM.* TO 'abdou'@'localhost';
+
 DROP TABLE IF EXISTS `adherent`;
 CREATE TABLE IF NOT EXISTS `adherent` (
   `id` int(15) NOT NULL AUTO_INCREMENT,
