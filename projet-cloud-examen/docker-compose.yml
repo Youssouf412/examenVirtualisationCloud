@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+    db:
+        image: mysql:5.7
+        container_name: mysql_c
+        restart: always
+        volumes:
+            - db-volume:/var/lib/mysql
+            - ./estm.sql:/docker-entrypoint-initdb.d/estm.sql
+        environment:
+            MYSQL_ROOT_PASSWORD: abdou
+            MYSQL_DATABASE: abdou
+            MYSQL_USER: abdou
+            MYSQL_PASSWORD: abdou
+
+    app:
+        image: myapp
+        container_name: myapp_c
+        restart: always
+        volumes:
+            - ./AppCloud:/var/www/html
+        ports:
+            - 8090:80
+        depends_on:
+            - db
+
+volumes:
+    db-volume:
+            

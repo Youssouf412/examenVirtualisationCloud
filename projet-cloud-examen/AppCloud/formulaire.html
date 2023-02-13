@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <title>INSCRIPTION</title>
+</head>
+
+<body>
+   <fieldset>
+    <form action="ajoutAdherent.php" method="POST">
+    <table align="center" border="1px solid">
+
+        <h1 align="center">INSCRIPTION</h1>
+
+        <tr>
+            <td><input type="text" name="prenom" size="40" placeholder="PRENOM" required></td>
+            <td><input type="text" name="nom" size="20" placeholder="NOM" required></td>
+        </tr>
+
+        <tr>
+            <td><input type="email" name="email" size="40" placeholder="EMAIL" required></td>
+        </tr>
+
+        <tr>
+            <td><input type="password" name="motPasse" size="20" placeholder="MOT DE PASSE" required></td>
+        </tr>
+
+        <tr>
+            <td><input type="password" name="motPasseC" size="40" placeholder="CONFIRMER MOT DE PASSE" required></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="profil" size="40" placeholder="PROFIL" required></td>
+        </tr>
+
+        <tr>
+            <td><button type="submit"> S'INSCRIRE </button></td>
+        </tr>
+
+    </table>
+    </form>
+   </fieldset> 
+</body>
+</html>
